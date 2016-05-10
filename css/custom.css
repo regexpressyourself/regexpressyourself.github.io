@@ -214,8 +214,7 @@ section.success a.active {
 #portfolio .portfolio-item {
     padding-left: 8%;
     padding-right: 8%;
-    /* background-color: white; */
-    background-color: #f39c12;
+    background-color: white;
     box-shadow: 5px 5px 2px gray;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
@@ -231,6 +230,10 @@ section.success a.active {
 #portfolio .portfolio-buttons{
     padding-top: 5px;
     border-color: black;
+}
+
+.portfolio-hr{
+    border-color: #BABABA;
 }
 
 #about {
@@ -388,4 +391,8 @@ footer .footer-below {
 
 .scroll-top .btn:focus {
     outline: 0;
+}
+
+#contact {
+    min-height: 100vh;
 }

@@ -35,3 +35,16 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+// slide down on mail click
+// o
+$(function() {
+    $('a.scroll-link').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 750, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});

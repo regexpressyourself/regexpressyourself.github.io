@@ -337,6 +337,20 @@ footer .footer-below {
     min-height: 100vh;
 }
 
-.thankyou-link {
-    color: #3399ff;
+.thanks-link,
+.thanks-link:focus,
+.thanks-link:active,
+.thanks-link.active {
+    outline: 0;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+.thanks-link:hover{
+    color: black;
+    font-size: 1.2em;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+.thanks-text {
+    text-decoration: underline;
 }

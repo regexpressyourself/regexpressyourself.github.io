@@ -42,9 +42,18 @@
                     <div class="intro-text">
                         <!-- <span class="brackets">< /></span> -->
                         <i id="code-icon" class="fa fa-code"></i>
-                        <span class="name">Sam Messina</span>
+                        <h1 class="name">Sam Messina</h1>
                         <span class="skills">Web Developer</span>
-
+                        <br/>
+                        <span class="header-links">
+                            <a class="header-link" href="https://github.com/regexpressyourself" >
+                                <i class="fa fa-github"></i></a>
+                            &nbsp;
+                            &nbsp;
+                            <a class="header-link scroll-link" href="#contact" >
+                                <i class="fa fa-envelope"></i></span>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -134,7 +143,7 @@
                         </p>
                         <hr class="portfolio-hr"/>
                         <p class="long-description">
-                            This is a website for the Northern Michigan band Turbo Pup. It features video, event list, photo carousels, and a contact form.
+                            This is a website for the Northern Michigan band Turbo Pup. It features video, integrated event calendar, photo carousels, and a contact form.
                         </p>
                     </div>
                 </div>
@@ -231,27 +240,32 @@
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+            <div class="row text-center">
+                <div class="col-lg-12 ">
                     <h2>Nice To Meet You</h2>
                     <br/>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img alt="Picture of Sam" class="img-responsive" src="img/portrait.jpg"/>
+            <div class="row text-center">
+                <div id="sam-pic-wrapper" class=" col-sm-6">
+                    <img id="sam-pic" alt="Picture of Sam" class="center-block img-responsive" src="img/portrait.jpg"/>
                 </div>
 
-                <div id="about-text" class="col-md-6">
+                <div id="about-text" class="col-sm-6">
                     <p>
-                        About me text here
+                        <b>I believe websites should be as easy to create as they are to use.</b> <br/><br/>
+
+                        With an emphasis on <b class="about-emphasis">simple, elegant design</b> and <b class="about-emphasis">comprehensive usability</b>, I'll work with you to make sure your web presence puts the best foot forward for your business, product, or service. Whether you're looking to create a static landing page or a full-fledged web app, I'll make sure the process goes smoothly from start to finish. <br/><br/>
+
+                        So get in touch, and we can start making something awesome!
                     </p>
 
                 </div>
             </div>
+            <br/>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a href="#contact" class="btn btn-lg btn-outline">
+                    <a href="#contact" class="btn btn-lg btn-outline scroll-link">
                         <i class="fa fa-chevron-down"></i> Get In Touch
                     </a>
                 </div>
@@ -265,7 +279,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Get In Touch</h2>
                     <br/>
                 </div>
             </div>
@@ -306,9 +320,10 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button vlaue="Send" type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button value="Send" type="submit" class="btn btn-danger btn-lg">Send</button>
                             </div>
                             <input type="hidden" name="_next" value="./thanks.html" />
+                            <input type="hidden" name="_subject" value="Contact from smessina.com"/>
                             <input type="text" name="_format" value="plain" style="display:none" />
                         </div>
                     </form>

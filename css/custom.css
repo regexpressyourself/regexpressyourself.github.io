@@ -273,7 +273,11 @@ form {
 }
 
 form .row:first-child .floating-label-form-group {
+<<<<<<< HEAD
     border-top: 0px solid #eee;
+=======
+    border-top: 2px solid #eee;
+>>>>>>> 3f3f73192cc94a58ccd52a04eb7cc524cedf6ab7
 }
 .required-input {
     color: red;

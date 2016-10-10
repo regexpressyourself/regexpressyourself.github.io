@@ -366,3 +366,6 @@ footer .footer-below {
 .thanks-text {
     text-decoration: underline;
 }
+.item>img{
+  margin: 0 auto;
+}

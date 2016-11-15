@@ -209,7 +209,7 @@ section h2 {
     background-image: url("../img/wood2.png") ; 
 }
 #second-project {
-    background-image: url("../img/turbo1.png")   ; 
+    background-image: url("../img/turbo1small.png")   ; 
 }
 #third-project {
     background-image: url("../img/oh4.jpg")   ; 
@@ -372,7 +372,7 @@ footer .footer-below {
 }
 @media (min-width: 768px) and (max-width: 991px)  {
     #third-project {
-        background-image: url("../img/oh2.png") ; 
+        background-image: url("../img/oh2small.png") ; 
     }
 }
 @media(min-width:768px) {
@@ -408,3 +408,12 @@ footer .footer-below {
         padding-top: 19vh;
     }
 }
+div#preloaded-images {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px; 
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+}
+

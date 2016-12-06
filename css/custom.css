@@ -217,10 +217,16 @@ section h2 {
     width: 100%;
     height: 10%;
 }
-.modal-close {
+.modal-close > span {
+    line-height: 100%;
+}
+.modal-close{
     position: fixed;
     right: 2%;
-    top: 2%;
+    top: -3%;
+}
+.modal-close:hover {
+    cursor: pointer;
 }
 .modal-close span{
     font-size: 7em;
@@ -228,7 +234,6 @@ section h2 {
 .modal-col {
     height: 100%;
     display: table;
-    margin-top: -5%;
 }
 
 .modal-col-content {
@@ -243,11 +248,18 @@ section h2 {
 }
 .modal-text{
     text-align: center;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 .modal-title{
     font-size: 3em;
     margin-bottom: 30px;
+}
+.project-detail-btn{
+    margin: 30px 10px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    font-size: 5em;
 }
 .carousel-image {
     max-height: 80vh;
@@ -453,6 +465,25 @@ footer .footer-below {
 
     .project-title{
         padding-top: 19vh;
+    }
+}
+@media(max-width:550px) {
+    .hidden-xxs {
+        display:none;
+    }
+    .project-detail-btn{
+        margin: 0;
+        position: fixed;
+        width: 50%;
+        height: 20%;
+        border-radius: 0;
+        bottom: 0;
+    }
+    .btn-left{
+        left: 0;
+    }
+    .btn-right{
+        right: 0;
     }
 }
 div#preloaded-images {

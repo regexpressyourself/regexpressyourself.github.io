@@ -21,4 +21,21 @@ $(function() {
     });
 });
 
-
+$(document).ready( function () {
+    $(".code-link-button").on("mouseover", function () {
+        $('.code-link-button').text("Code");
+        $('.code-link-button').css("font-size", "2em");
+    });
+    $(".live-link-button").on("mouseover", function () {
+        $('.live-link-button').text("Live");
+        $('.live-link-button').css("font-size", "2em");
+    });
+    $(".code-link-button").on("mouseout", function () {
+        $('.code-link-button').html("<i class='fa fa-github project-button-icon'></i>");
+        $('.code-link-button').css("font-size", "5em");
+    });
+    $(".live-link-button").on("mouseout", function () {
+        $('.live-link-button').html("<i class='fa fa-external-link-square ' aria-hidden='true'></i>");
+        $('.live-link-button').css("font-size", "5em");
+    });
+});

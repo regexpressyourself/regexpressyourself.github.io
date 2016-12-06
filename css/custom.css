@@ -156,7 +156,7 @@ section h2 {
 }
 .overlay:focus,
 .overlay:hover {
-    background: rgba(27,27,27, 0.85);
+    background: rgba(27,27,27, 0.9);
 
 }
 .overlay > span{

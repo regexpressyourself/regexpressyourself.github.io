@@ -239,10 +239,13 @@ section h2 {
 .modal-col-content {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
 
 .modal-project-image {
     max-width: 100%;
+    max-height: 90vh;
+    margin-top: 5vh;
     display: inline-block;
     text-align: center;
 }
@@ -255,7 +258,7 @@ section h2 {
     margin-bottom: 30px;
 }
 .project-detail-btn{
-    margin: 30px 10px;
+    margin: 10px 10px;
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -271,7 +274,7 @@ section h2 {
     background-image: url("../img/turbo1small.png")   ; 
 }
 #third-project {
-    background-image: url("../img/oh4.jpg")   ; 
+    background-image: url("../img/oh4.png")   ; 
 }
 #fourth-project {
     background-image: url("../img/port.png")   ; 

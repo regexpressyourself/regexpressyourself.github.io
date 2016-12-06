@@ -223,7 +223,7 @@ section h2 {
 .modal-close{
     position: fixed;
     right: 25px;
-    top: -40px;
+    top: -30px;
 }
 .modal-close:hover {
     cursor: pointer;

@@ -156,7 +156,7 @@ section h2 {
 }
 .overlay:focus,
 .overlay:hover {
-    background: rgba(27,27,27, 0.8);
+    background: rgba(27,27,27, 0.85);
 
 }
 .overlay > span{
@@ -191,17 +191,117 @@ section h2 {
 .center-work-item {
     height: 90vh;
 }
-.modal {
-    max-height: 80vh;
+
+.modal{
+    margin-right: -15px;
+}
+.modal-container {
+    height:100%;
+}
+.modal-row {
+    height: 100%;
+}
+.modal-content {
+    height: 100%;
 }
 .modal-body{
+	  background: rgba(231, 76, 60, .6);
     padding: 0;
+    height: 100%;
 }
 .modal-dialog{
-    width: 80%;
-    max-height: 80vh;
     margin: 0 auto;
+    height: 100%;
 }
+.modal-header-line{
+    width: 100%;
+    height: 10%;
+}
+.modal-close > span {
+    line-height: 100%;
+}
+.modal-close{
+    position: fixed;
+    right: 25px;
+    top: -40px;
+}
+.modal-close:hover {
+    cursor: pointer;
+}
+.modal-close span{
+    font-size: 7em;
+}
+.modal-col {
+    height: 100%;
+    display: table;
+}
+
+.modal-col-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.modal-project-image {
+    max-width: 100%;
+    max-height: 90vh;
+    margin-top: 5vh;
+    display: inline-block;
+    text-align: center;
+}
+.modal-text{
+    text-align: center;
+    padding: 0 5%;
+}
+.modal-title{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.project-detail-btn{
+    margin: 10px 10px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    font-size: 5em;
+}
+.live-txt, .code-txt {
+    font-size: .4em;
+    opacity: 0;
+    top: 0px;
+     -webkit-transition:.2s;
+       -moz-transition:.2s;
+        -ms-transition:.2s;
+         -o-transition:.2s;
+            transition:.2s;
+}
+
+.live-icon, .code-icon {
+     -webkit-transition:.2s;
+       -moz-transition:.2s;
+        -ms-transition:.2s;
+         -o-transition:.2s;
+            transition:.2s;
+     position: relative;
+    bottom: -2px;
+}
+
+.live-link-button:hover i.live-icon {
+    opacity: 0;
+    bottom: 90px;
+}
+.live-link-button:hover h4.live-txt {
+    opacity: 1;
+    margin-top: -90px;
+}
+.code-link-button:hover i.code-icon {
+    opacity: 0;
+    bottom: 90px;
+}
+.code-link-button:hover h4.code-txt {
+    opacity: 1;
+    margin-top: -90px;
+}
+
 .carousel-image {
     max-height: 80vh;
 }
@@ -212,7 +312,7 @@ section h2 {
     background-image: url("../img/turbo1small.png")   ; 
 }
 #third-project {
-    background-image: url("../img/oh4.jpg")   ; 
+    background-image: url("../img/oh4.png")   ; 
 }
 #fourth-project {
     background-image: url("../img/port.png")   ; 
@@ -406,6 +506,31 @@ footer .footer-below {
 
     .project-title{
         padding-top: 19vh;
+    }
+}
+@media(max-width:550px) {
+    .hidden-xxs {
+        display:none;
+    }
+    .project-detail-btn{
+        margin: 0;
+        position: fixed;
+        width: 50%;
+        height: 20%;
+        border-radius: 0;
+        padding-top: 3%;
+        bottom: 0;
+    }
+    .btn-left{
+        left: 0;
+    }
+    .btn-right{
+        right: 0;
+    }
+    .btn-center {
+        right: 0;
+        left: 0;
+        width: 100%;
     }
 }
 div#preloaded-images {

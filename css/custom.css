@@ -156,7 +156,7 @@ section h2 {
 }
 .overlay:focus,
 .overlay:hover {
-    background: rgba(27,27,27, 0.85);
+    background: rgba(27,27,27, 0.9);
 
 }
 .overlay > span{
@@ -173,7 +173,7 @@ section h2 {
 .project-title{
     margin: 0;
     font-size: 40px;
-    padding: 20vh 5% 0 5%;
+    padding: 15vh 5% 0 5%;
 }
 #center-project-title{
     padding-top: 40vh;
@@ -223,7 +223,7 @@ section h2 {
 .modal-close{
     position: fixed;
     right: 25px;
-    top: -40px;
+    top: -30px;
 }
 .modal-close:hover {
     cursor: pointer;
@@ -284,7 +284,6 @@ section h2 {
      position: relative;
     bottom: -2px;
 }
-
 .live-link-button:hover i.live-icon {
     opacity: 0;
     bottom: 90px;
@@ -301,6 +300,19 @@ section h2 {
     opacity: 1;
     margin-top: -90px;
 }
+
+@-moz-document url-prefix() { 
+    .live-icon, .code-icon {
+        top: 14px;
+    }
+    .live-link-button:hover i.live-icon {
+        top: -90px;
+    }
+    .code-link-button:hover i.code-icon {
+        top: -90px;
+    }
+}
+
 
 .carousel-image {
     max-height: 80vh;

@@ -334,7 +334,8 @@ section h2 {
     background-image: url("../img/turbo1small.png")   ; 
 }
 #third-project {
-    background-image: url("../img/oh4.png")   ; 
+    background-image: url("../img/oh3.png")   ; 
+    background-position: 50% 50%;
 }
 #fourth-project {
     background-image: url("../img/port.png")   ; 
@@ -560,13 +561,16 @@ footer .footer-below {
     .live-icon{
         width: 50%;
     }
+    #third-project {
+        background-image: url("../img/oh3.png")   ; 
+    }
 }
 div#preloaded-images {
-  position: absolute;
-  overflow: hidden;
-  left: -9999px; 
-  top: -9999px;
-  height: 1px;
-  width: 1px;
+    position: absolute;
+    overflow: hidden;
+    left: -9999px; 
+    top: -9999px;
+    height: 1px;
+    width: 1px;
 }
 

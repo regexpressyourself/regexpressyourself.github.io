@@ -120,6 +120,17 @@ header .header-links {
     color: white;
     font-size: 3em;
 }
+#ui-hint {
+    position: absolute;
+    /* bottom: 5%; */
+    margin: 0 auto;
+    font-size: 3em;
+    left: 0;
+    right: 0;
+    margin-top: -175px;
+    text-align: center;
+
+}
 
 
 section {
@@ -131,14 +142,18 @@ section h2 {
     font-size: 3em;
 }
 
+#first-work-container {
+    padding-left: 0;
+    padding-right: 0;
+}
 .work-col{
     padding-left: 0px;
     padding-right: 0px;
 }
 .work-item {
-    height: 45vh;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center top; 
     background-size: auto, cover;
     -webkit-background-size: cover;
     -moz-background-size: 100%, cover;
@@ -146,13 +161,17 @@ section h2 {
 }
 .overlay {
     background: rgba(27,27,27, 0.0);
-    height: 100%;
-    width: 100%;
+    height: 50vh;
+    width: 33vw;
+    display: table-row;
     -webkit-transition: .3s ease,opacity .3s ease;
     -moz-transition: .3s ease,opacity .3s ease;
     -ms-transition: .3s ease,opacity .3s ease;
     transition: .3s ease,opacity .3s ease;
 
+}
+.center-overlay {
+    height: 100vh;
 }
 .overlay:focus,
 .overlay:hover {
@@ -169,14 +188,17 @@ section h2 {
 
 .overlay-text{
     text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.click-for-more {
+    margin-top: 30px;
 }
 .project-title{
     margin: 0;
     font-size: 40px;
-    padding: 15vh 5% 0 5%;
-}
-#center-project-title{
-    padding-top: 40vh;
+    padding: 0 5% 0 5%;
+    width: 100vw;
 }
 .work-link:hover,
 .work-link:focus,
@@ -189,7 +211,7 @@ section h2 {
     padding: 0 5%;
 }
 .center-work-item {
-    height: 90vh;
+    height: 100vh;
 }
 
 .modal{
@@ -244,7 +266,7 @@ section h2 {
 
 .modal-project-image {
     max-width: 100%;
-    max-height: 90vh;
+    max-height: 100vh;
     margin-top: 5vh;
     display: inline-block;
     text-align: center;
@@ -324,7 +346,8 @@ section h2 {
     background-image: url("../img/turbo1small.png")   ; 
 }
 #third-project {
-    background-image: url("../img/oh4.png")   ; 
+    background-image: url("../img/oh3.png")   ; 
+    background-position: 50% 50%;
 }
 #fourth-project {
     background-image: url("../img/port.png")   ; 
@@ -477,14 +500,35 @@ footer .footer-below {
     text-decoration: underline;
 }
 .item>img{
-  margin: 0 auto;
+    margin: 0 auto;
 }
 .app-logo{
-  margin: 0 auto;
+    margin: 0 auto;
+}
+@media (min-width: 992px){
+    .center-project-title {
+        height: 100vh;
+    }
+    .project-title {
+        width: 33vw;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px)  {
     #third-project {
-        background-image: url("../img/oh2small.png") ; 
+        background-image: url("../img/oh1.png") ; 
+        background-position: center top;
+    }
+    .center-overlay {
+        height: 50vh;
+    }
+    .center-work-item {
+        height: 50vh;
+    }
+    .project-title {
+        width: 50vw;
+    }
+    #center-project-title {
+        width: 100vw;
     }
 }
 @media(min-width:768px) {
@@ -501,23 +545,21 @@ footer .footer-below {
         font-size: 1.75em;
     }
 }
-@media(max-width:767px) {
+@media (max-width: 767px) {
     section {
         padding: 75px 0;
     }
-
-    section.first {
-        padding-top: 75px;
+    .center-overlay {
+        height: 50vh;
     }
     .center-work-item {
-        height: 45vh;
+        height: 50vh;
     }
-    #center-project-title{
-        padding-top: 19vh;
+    #third-project {
+        background-position: center top;
     }
-
-    .project-title{
-        padding-top: 19vh;
+    section.first {
+        padding-top: 75px;
     }
 }
 @media(max-width:550px) {
@@ -544,13 +586,22 @@ footer .footer-below {
         left: 0;
         width: 100%;
     }
+    .code-icon {
+        width: 50%;
+    }
+    .live-icon{
+        width: 50%;
+    }
+    #third-project {
+        background-image: url("../img/oh3.png")   ; 
+    }
 }
 div#preloaded-images {
-  position: absolute;
-  overflow: hidden;
-  left: -9999px; 
-  top: -9999px;
-  height: 1px;
-  width: 1px;
+    position: absolute;
+    overflow: hidden;
+    left: -9999px; 
+    top: -9999px;
+    height: 1px;
+    width: 1px;
 }
 

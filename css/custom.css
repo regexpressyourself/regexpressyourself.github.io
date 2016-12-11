@@ -126,7 +126,7 @@ header .header-links {
     font-size: 3em;
     left: 0;
     right: 0;
-    margin-top: -175px;
+    margin-top: -75px;
     text-align: center;
 
 }
@@ -296,6 +296,10 @@ section h2 {
     width: 120px;
     border-radius: 50%;
     font-size: 5em;
+    text-align: center;
+}
+.live-btn-txt {
+    display: inline-block;
 }
 .live-txt, .code-txt {
     font-size: .4em;
@@ -609,9 +613,6 @@ footer .footer-below {
         right: 0;
         left: 0;
         width: 100%;
-    }
-    .live-icon{
-        width: 50%;
     }
     #third-project {
         background-image: url("../img/oh3.png")   ; 

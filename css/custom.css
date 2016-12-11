@@ -350,7 +350,20 @@ section h2 {
     background-position: 50% 50%;
 }
 #fourth-project {
-    background-image: url("../img/port.png")   ; 
+    background-image: url("../img/qlanguage.png")   ; 
+    /* The following is to contain the Q Language Logo
+       and should be moved with it */
+
+    background-color: #FFF176;
+    background-position: center;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 }
 #fifth-project {
     background-image: url("../img/sched1.png")   ; 

@@ -593,7 +593,7 @@ footer .footer-below {
     .project-detail-btn{
         margin: 0;
         position: fixed;
-        width: 50%;
+        width: 50vw;
         height: 20%;
         border-radius: 0;
         padding-top: 3%;
@@ -601,20 +601,25 @@ footer .footer-below {
     }
     .btn-left{
         left: 0;
+        text-align: center;
     }
     .btn-right{
         right: 0;
+        text-align: center;
     }
     .btn-center {
         right: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
+        text-align: center;
     }
     .code-icon {
-        width: 50%;
+        width: 50vw;
+        text-align: center;
     }
     .live-icon{
-        width: 50%;
+        width: 50vw;
+        text-align: center;
     }
     #third-project {
         background-image: url("../img/oh3.png")   ; 

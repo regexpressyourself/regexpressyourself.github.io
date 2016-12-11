@@ -133,7 +133,7 @@ header .header-links {
 
 
 section {
-    padding: 100px 0;
+    padding: 0 0 100px 0;
 }
 
 section h2 {
@@ -270,6 +270,17 @@ section h2 {
     margin-top: 5vh;
     display: inline-block;
     text-align: center;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+
+}
+.modal-project-image:focus,
+.modal-project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .modal-text{
     text-align: center;
@@ -350,7 +361,20 @@ section h2 {
     background-position: 50% 50%;
 }
 #fourth-project {
-    background-image: url("../img/port.png")   ; 
+    background-image: url("../img/qlanguage.png")   ; 
+    /* The following is to contain the Q Language Logo
+       and should be moved with it */
+
+    background-color: #FFF176;
+    background-position: center;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 }
 #fifth-project {
     background-image: url("../img/sched1.png")   ; 
@@ -547,7 +571,7 @@ footer .footer-below {
 }
 @media (max-width: 767px) {
     section {
-        padding: 75px 0;
+        padding: 0 0 75px 0;
     }
     .center-overlay {
         height: 50vh;
@@ -569,7 +593,7 @@ footer .footer-below {
     .project-detail-btn{
         margin: 0;
         position: fixed;
-        width: 50%;
+        width: 50vw;
         height: 20%;
         border-radius: 0;
         padding-top: 3%;
@@ -577,20 +601,25 @@ footer .footer-below {
     }
     .btn-left{
         left: 0;
+        text-align: center;
     }
     .btn-right{
         right: 0;
+        text-align: center;
     }
     .btn-center {
         right: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
+        text-align: center;
     }
     .code-icon {
-        width: 50%;
+        width: 50vw;
+        text-align: center;
     }
     .live-icon{
-        width: 50%;
+        width: 50vw;
+        text-align: center;
     }
     #third-project {
         background-image: url("../img/oh3.png")   ; 

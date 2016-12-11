@@ -119,14 +119,15 @@ header .header-links {
     color: white;
     font-size: 3em;
 }
-#ui-hint {
+#work-header-link {
     position: absolute;
     /* bottom: 5%; */
     margin: 0 auto;
-    font-size: 3em;
+    font-size: 45px;
+    width: 45px;
     left: 0;
     right: 0;
-    margin-top: -75px;
+    margin-top: -50px;
     text-align: center;
 
 }

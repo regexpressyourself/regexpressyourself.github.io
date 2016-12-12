@@ -153,11 +153,14 @@ section h2 {
 .work-item {
     height: 50vh;
     background-repeat: no-repeat;
-    background-position: center top; 
-    background-size: auto, cover;
-    -webkit-background-size: cover;
-    -moz-background-size: 100%, cover;
-    -o-background-size: 100%, cover;
+    background-position: center;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 }
 .overlay {
     background: rgba(27,27,27, 0.0);
@@ -356,34 +359,28 @@ section h2 {
     max-height: 80vh;
 }
 #first-project {
-    background-image: url("../img/wood2small.png") ; 
+    background-image: url("../img/woody.png") ; 
+    background-color: #000000;
+}
+#turbo-col {
+    background-image: url("../img/turbo-bg.png") ; 
+    background-color: #000000;
 }
 #second-project {
-    background-image: url("../img/turbo1small.png")   ; 
+    background-image: url("../img/turbo.png")   ; 
 }
 #third-project {
-    background-image: url("../img/oh3.png")   ; 
+    background-image: url("../img/ohlogo.png")   ; 
     background-position: 50% 50%;
+    background-color: #E6FAED;
 }
 #fourth-project {
     background-image: url("../img/qlanguage.png")   ; 
-    /* The following is to contain the Q Language Logo
-       and should be moved with it */
-
     background-color: #FFF176;
-    background-position: center;
-    -webkit-background-position: center;
-    -moz-background-position: center;
-    -o-background-position: center;
-
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
 }
 #fifth-project {
-    background-image: url("../img/sched1.png")   ; 
-    background-position: left bottom;
+    background-image: url("../img/scheduler.png")   ; 
+    background-color: #282A36;
 }
 #portfolio .portfolio-item {
     padding-left: 8%;
@@ -543,10 +540,6 @@ footer .footer-below {
     }
 }
 @media (min-width: 768px) and (max-width: 991px)  {
-    #third-project {
-        background-image: url("../img/oh1.png") ; 
-        background-position: center top;
-    }
     .center-overlay {
         height: 50vh;
     }
@@ -584,9 +577,6 @@ footer .footer-below {
     .center-work-item {
         height: 50vh;
     }
-    #third-project {
-        background-position: center top;
-    }
     section.first {
         padding-top: 75px;
     }
@@ -614,9 +604,6 @@ footer .footer-below {
         right: 0;
         left: 0;
         width: 100%;
-    }
-    #third-project {
-        background-image: url("../img/oh3.png")   ; 
     }
 }
 div#preloaded-images {

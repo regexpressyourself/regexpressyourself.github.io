@@ -134,7 +134,7 @@ header .header-links {
 
 
 section {
-    padding: 0 0 100px 0;
+    padding: 0 0 0 0;
 }
 
 section h2 {
@@ -142,7 +142,7 @@ section h2 {
     font-size: 3em;
 }
 
-#first-work-container {
+.flush-container{
     padding-left: 0;
     padding-right: 0;
 }
@@ -408,12 +408,19 @@ section h2 {
 }
 
 form {
-    padding-left: 8%;
-    padding-right: 8%;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
     background-color: white;
-    box-shadow: 5px 5px 2px rgba(0,0,0,.3);
-    border: 1px solid #d8d8d8;
-    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+form:hover,
+form:active,
+form:visited,
+form:focus {
+    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    border: none;
 }
 
 #contact-title {
@@ -483,6 +490,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
+    width: 100%;
 }
 
 footer h class="project-title3" {
@@ -499,13 +507,20 @@ footer .footer-col {
 }
 
 footer .footer-below {
-    padding: 25px 0;
+    display: table-row;
     background-color: #233140;
+    height: 5vh;
+}
+footer .footer-below .container{
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #contact {
-    background-color: #f39c12;
-    min-height: 100vh;
+    background-color: #e74c3c;
+    min-height: 95vh;
+    padding-top: 40px;
 }
 
 .thanks-link,
@@ -569,7 +584,7 @@ footer .footer-below {
 }
 @media (max-width: 767px) {
     section {
-        padding: 0 0 75px 0;
+        padding: 0 0 0 0;
     }
     .center-overlay {
         height: 50vh;

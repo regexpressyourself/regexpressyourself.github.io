@@ -119,21 +119,22 @@ header .header-links {
     color: white;
     font-size: 3em;
 }
-#ui-hint {
+#work-header-link {
     position: absolute;
     /* bottom: 5%; */
     margin: 0 auto;
-    font-size: 3em;
+    font-size: 45px;
+    width: 45px;
     left: 0;
     right: 0;
-    margin-top: -75px;
+    margin-top: -50px;
     text-align: center;
 
 }
 
 
 section {
-    padding: 0 0 100px 0;
+    padding: 0 0 0 0;
 }
 
 section h2 {
@@ -141,7 +142,7 @@ section h2 {
     font-size: 3em;
 }
 
-#first-work-container {
+.flush-container{
     padding-left: 0;
     padding-right: 0;
 }
@@ -152,11 +153,14 @@ section h2 {
 .work-item {
     height: 50vh;
     background-repeat: no-repeat;
-    background-position: center top; 
-    background-size: auto, cover;
-    -webkit-background-size: cover;
-    -moz-background-size: 100%, cover;
-    -o-background-size: 100%, cover;
+    background-position: center;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 }
 .overlay {
     background: rgba(27,27,27, 0.0);
@@ -355,34 +359,28 @@ section h2 {
     max-height: 80vh;
 }
 #first-project {
-    background-image: url("../img/wood2small.png") ; 
+    background-image: url("../img/woody.png") ; 
+    background-color: #000000;
+}
+#turbo-col {
+    background-image: url("../img/turbo-bg.png") ; 
+    background-color: #000000;
 }
 #second-project {
-    background-image: url("../img/turbo1small.png")   ; 
+    background-image: url("../img/turbo.png")   ; 
 }
 #third-project {
-    background-image: url("../img/oh3.png")   ; 
+    background-image: url("../img/ohlogo.png")   ; 
     background-position: 50% 50%;
+    background-color: #E6FAED;
 }
 #fourth-project {
     background-image: url("../img/qlanguage.png")   ; 
-    /* The following is to contain the Q Language Logo
-       and should be moved with it */
-
     background-color: #FFF176;
-    background-position: center;
-    -webkit-background-position: center;
-    -moz-background-position: center;
-    -o-background-position: center;
-
-    background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
 }
 #fifth-project {
-    background-image: url("../img/sched1.png")   ; 
-    background-position: left bottom;
+    background-image: url("../img/scheduler.png")   ; 
+    background-color: #282A36;
 }
 #portfolio .portfolio-item {
     padding-left: 8%;
@@ -410,12 +408,19 @@ section h2 {
 }
 
 form {
-    padding-left: 8%;
-    padding-right: 8%;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
     background-color: white;
-    box-shadow: 5px 5px 2px rgba(0,0,0,.3);
-    border: 1px solid #d8d8d8;
-    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+form:hover,
+form:active,
+form:visited,
+form:focus {
+    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    border: none;
 }
 
 #contact-title {
@@ -485,6 +490,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
+    width: 100%;
 }
 
 footer h class="project-title3" {
@@ -501,13 +507,20 @@ footer .footer-col {
 }
 
 footer .footer-below {
-    padding: 25px 0;
+    display: table-row;
     background-color: #233140;
+    height: 5vh;
+}
+footer .footer-below .container{
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #contact {
-    background-color: #f39c12;
-    min-height: 100vh;
+    background-color: #e74c3c;
+    min-height: 95vh;
+    padding-top: 40px;
 }
 
 .thanks-link,
@@ -542,10 +555,6 @@ footer .footer-below {
     }
 }
 @media (min-width: 768px) and (max-width: 991px)  {
-    #third-project {
-        background-image: url("../img/oh1.png") ; 
-        background-position: center top;
-    }
     .center-overlay {
         height: 50vh;
     }
@@ -575,16 +584,13 @@ footer .footer-below {
 }
 @media (max-width: 767px) {
     section {
-        padding: 0 0 75px 0;
+        padding: 0 0 0 0;
     }
     .center-overlay {
         height: 50vh;
     }
     .center-work-item {
         height: 50vh;
-    }
-    #third-project {
-        background-position: center top;
     }
     section.first {
         padding-top: 75px;
@@ -613,9 +619,6 @@ footer .footer-below {
         right: 0;
         left: 0;
         width: 100%;
-    }
-    #third-project {
-        background-image: url("../img/oh3.png")   ; 
     }
 }
 div#preloaded-images {

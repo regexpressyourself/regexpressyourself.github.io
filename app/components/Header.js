@@ -27,16 +27,20 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header style={HeaderContainerStyle}>
-                <div style={HeaderInnerStyle}>
-                    <i style={HeaderIcon} className="fa fa-code" />
-                    <h1>Sam Messina</h1>
-                    <p>Student | Developer</p>
-                    <br/>
+            <header className="conatiner" style={HeaderContainerStyle}>
+                <div className="row">
+                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div style={HeaderInnerStyle}>
+                            <i style={HeaderIcon} className="fa fa-code" />
+                            <h1>Sam Messina</h1>
+                            <p>Student | Developer</p>
+                            <br/>
+                        </div>
+                    </div>
+                    <div onClick={this.scrollToProjects} className="scrolling-chevron">
+                        <i className="fa fa-chevron-down" />
+                    </div>
                 </div>
-                <span onClick={this.scrollToProjects} className="scrolling-chevron">
-                    <i className="fa fa-chevron-down" />
-                </span>
             </header>
 
 

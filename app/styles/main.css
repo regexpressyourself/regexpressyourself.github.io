@@ -137,8 +137,8 @@ a.clickable:visited {
 }
 
 .scrolling-chevron {
-    position: absolute;
-    bottom: 20px;
+    margin-bottom: -55vh;
+    margin-top: 55vh;
     -webkit-transition: all .2s; /* Safari */
     transition: all .2s;
     transition-timing-function: ease-in-out;
@@ -245,6 +245,10 @@ a.clickable:visited {
     }
     #contact-section {
         min-height: 75vh;
+    }
+    .scrolling-chevron {
+        margin-bottom: -70vh;
+        margin-top: 70vh;
     }
 }
 

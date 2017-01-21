@@ -1,0 +1,255 @@
+
+body {
+    font-size: 200%;
+    color: #2F343B;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 64px;
+    margin-bottom: 64px;
+    color: #2F343B;
+}
+h2:after {
+    display: block;
+    position: absolute;
+    content:"____";
+    width: 100%; top: 30px;
+    text-align: center;
+    left: 0;
+}
+
+h3 {
+    color: #2F343B;
+    font-size: 56px;
+    font-weight: 600;
+}
+
+header:before {
+    /* position: absolute; */
+    /* top: 0; right: 0; bottom: 0; left: 0; */
+    /* background-color: inherit; */
+    /* content: ' '; */
+}
+
+footer {
+    border-top: 1px solid black;
+    padding: 12px 0;
+    background-color: #2F343B;
+    color: #F9F5EC;
+}
+
+.clickable {
+    position: relative;
+    color: #703030;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    text-decoration: none;
+}
+.clickable:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #C77966;
+}
+.clickable:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #C77966;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.clickable:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(.75);
+    transform: scaleX(.75);
+}
+
+a.clickable {
+    text-decoration: none;
+}
+a.clickable:hover,
+a.clickable:active,
+a.clickable:visited {
+    text-decoration: none;
+}
+
+
+.project-image-background {
+    height: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition-duration: .5s;
+    transition-property: all;
+}
+
+.project-image-background:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.project-link {
+    margin: 0 20px;
+    font-size: 110%;
+}
+.project-link.right {
+    float: left;
+}
+.project-link.left {
+    float: right;
+}
+
+.project-link > .fa-github {
+}
+
+.project-link > .fa-link{
+}
+
+.fa {
+    font-size: 140%;
+}
+
+.project-link-wrapper {
+    margin: 32px 0 16px 0 ;
+}
+
+.tech-logo-image {
+    max-height: 42px;
+    max-width: 42px;
+    margin: 16px 12px 5px 12px;
+}
+
+.img-responsive {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+}
+
+.scrolling-chevron {
+    position: absolute;
+    bottom: 20px;
+    -webkit-transition: all .2s; /* Safari */
+    transition: all .2s;
+    transition-timing-function: ease-in-out;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+@-webkit-keyframes bounce{
+    0%,100%,20%,50%,80%{
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+    40%{
+        -webkit-transform:translateY(-15px);
+        transform:translateY(-30px)
+    }
+    60% {
+        -webkit-transform:translateY(-7px);
+        transform:translateY(-7px)
+    }
+}
+@keyframes bounce{
+    0%,100%,20%,50%,80%{
+        -ms-transform:translateY(0);
+        -webkit-transform:translateY(0);
+        transform:translateY(0)
+    }
+    40%{
+        -ms-transform:translateY(-15px);
+        -webkit-transform:translateY(-15px);
+        transform:translateY(-15px)
+    }
+    60%{
+        -ms-transform:translateY(-7x);
+        -webkit-transform:translateY(-7px);
+        transform:translateY(-7px)
+    }
+}
+.scrolling-chevron:hover,
+.scrolling-chevron:active {
+    cursor: pointer;
+    font-size: 120%;
+}
+
+.fa {
+    padding: 0 10px;
+}
+
+.project-row {
+    margin: 120px 0;
+}
+
+#contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 24px;
+    background-color: #703030;
+    color: #F9F5EC;
+    padding-bottom: 32px;
+    min-height: 50vh;
+}
+#contact-section  .clickable,
+#contact-section  h2
+{
+    color: #F9F5EC;
+}
+
+#project-section {
+    background-color: #F9F5EC;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 175%;
+    }
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 52px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    .project-row {
+        margin: 42px 0px;
+    }
+    .project-link {
+        font-size: 120%;
+    }
+    .project-link.right {
+        text-align: center;
+    }
+    .project-link.left,
+    .project-link.right {
+        float: none;
+    }
+    .tech-logo-image {
+        max-height: 32px;
+        max-width: 32px;
+        margin: 12px 8px ;
+    }
+    #contact-section {
+        min-height: 75vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+        .project-image-background {
+        max-width: 700px;
+    }
+}

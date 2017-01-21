@@ -9,6 +9,7 @@ h1 {
 
 h2 {
     font-size: 64px;
+    font-weight: 600;
     margin-bottom: 64px;
     color: #2F343B;
 }
@@ -66,6 +67,7 @@ footer {
     color: #F9F5EC;
     padding-bottom: 32px;
     min-height: 50vh;
+    font-size: 110%;
 }
 
 #contact-section  .clickable,

@@ -3,11 +3,11 @@ import Home from '../components/Home';
 import {ReactRouter,
         Router,
         Route,
-        hashHistory,
+        browserHistory,
         IndexRoute} from 'react-router';
 
 let routes = (
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path='/' component={Home}>
         </Route>
     </Router>

@@ -20,7 +20,9 @@ class SmallProjectView extends React.Component {
                              src={this.props.imageSrc} />
                     </div>
                 </a>
-                <ProjectLinks />
+                <ProjectLinks
+                    githubLink={this.props.githubLink}
+                    projectLink={this.props.projectLink} />
             </div>
         )
     }

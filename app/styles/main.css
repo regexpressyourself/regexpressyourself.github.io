@@ -1,4 +1,3 @@
-
 body {
     font-size: 200%;
     color: #2F343B;
@@ -13,6 +12,7 @@ h2 {
     margin-bottom: 64px;
     color: #2F343B;
 }
+
 h2:after {
     display: block;
     position: absolute;
@@ -28,7 +28,6 @@ h3 {
     font-weight: 600;
 }
 
-
 footer {
     border-top: 1px solid black;
     padding: 12px 0;
@@ -39,6 +38,7 @@ footer {
 #header {
     display: flex;
     align-items: center;
+    flex-flow: column;
     justify-content: center;
     color: #f3ebda;
     text-align: center;
@@ -51,9 +51,35 @@ footer {
     font-size: 500%;
     margin-top: -5vh;
 }
+
+#project-section {
+    background-color: #F9F5EC;
+}
+
+#contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 24px;
+    background-color: #703030;
+    color: #F9F5EC;
+    padding-bottom: 32px;
+    min-height: 50vh;
+}
+
+#contact-section  .clickable,
+#contact-section  h2 {
+    color: #F9F5EC;
+}
+
+.spacer{
+    flex-grow: 1;
+}
+
 .scrolling-chevron {
-    margin-bottom: -60vh;
-    margin-top: 60vh;
+    position: absolute;
+    bottom: 5vh;
     -webkit-transition: all .2s; /* Safari */
     transition: all .2s;
     transition-timing-function: ease-in-out;
@@ -69,11 +95,7 @@ footer {
     transition: all 0.5s ease-in-out 0s;
     text-decoration: none;
 }
-.clickable:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    color: #C77966;
-}
+
 .clickable:before {
     content: "";
     position: absolute;
@@ -88,6 +110,13 @@ footer {
     -webkit-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
 }
+
+.clickable:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #C77966;
+}
+
 .clickable:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(.75);
@@ -201,27 +230,6 @@ a.clickable:visited {
     margin: 120px 0;
 }
 
-#contact-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid black;
-    padding-top: 24px;
-    background-color: #703030;
-    color: #F9F5EC;
-    padding-bottom: 32px;
-    min-height: 50vh;
-}
-#contact-section  .clickable,
-#contact-section  h2
-{
-    color: #F9F5EC;
-}
-
-#project-section {
-    background-color: #F9F5EC;
-}
-
 @media only screen and (max-width: 768px) {
     body {
         font-size: 175%;
@@ -256,10 +264,6 @@ a.clickable:visited {
     #contact-section {
         min-height: 75vh;
     }
-    .scrolling-chevron {
-        margin-bottom: -65vh;
-        margin-top: 65vh;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -269,9 +273,3 @@ a.clickable:visited {
 }
 
 
-@media only screen and (min-width: 435px) and (max-width: 768px {
-    .scrolling-chevron {
-        margin-bottom: -50vh;
-        margin-top: 50vh;
-    }
-}

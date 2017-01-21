@@ -3,8 +3,7 @@ import Home from '../components/Home';
 import {ReactRouter,
         Router,
         Route,
-        browserHistory,
-        IndexRoute} from 'react-router';
+        browserHistory} from 'react-router';
 
 let routes = (
     <Router history={browserHistory}>

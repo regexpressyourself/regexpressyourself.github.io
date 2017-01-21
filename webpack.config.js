@@ -27,7 +27,6 @@ module.exports = {
     ]
   },
   plugins: [
-      /*
 
       new webpack.DefinePlugin({
           'process.env': {
@@ -36,7 +35,6 @@ module.exports = {
       }),
 
       new webpack.optimize.UglifyJsPlugin(),
-      */
       HTMLWebpackPluginConfig
   ]
 };

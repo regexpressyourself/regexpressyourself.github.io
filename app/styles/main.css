@@ -80,6 +80,7 @@ footer {
 .scrolling-chevron {
     position: absolute;
     bottom: 5vh;
+    margin: 0 auto;
     -webkit-transition: all .2s; /* Safari */
     transition: all .2s;
     transition-timing-function: ease-in-out;

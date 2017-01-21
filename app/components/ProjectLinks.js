@@ -20,7 +20,6 @@ class ProjectLinks extends React.Component {
                         </a>
                     </div>
                     <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <br className="hidden-sm hidden-md hidden-lg"/>
                         <a href={this.props.githubLink} className="clickable project-link right">
                             <i className="fa fa-github"></i> Github
                         </a>

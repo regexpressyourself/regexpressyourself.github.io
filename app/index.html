@@ -18,15 +18,39 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <script>
+         function scrollToProjects() {
+             $(document).ready(function () {
+                 $("html, body").animate({
+                     scrollTop: $("#project-section").offset().top
+                 }, 500);
+             });
+         }
+        </script>
 
     </head>
 
-        <body>
-            <div id="app"></div>
+    <body>
+        <header id="header">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div>
+                        <i id="header-icon" class="fa fa-code"></i>
+                        <h1>Sam Messina</h1>
+                        <p>Student | Developer</p>
+                        <br/>
+                    </div>
+                </div>
+                <div onClick=scrollToProjects() class="scrolling-chevron">
+                    <i class="fa fa-chevron-down"> </i>
+                </div>
+            </div>
+        </header>
+        <div id="app"></div>
         <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
         </script>
         <script async type="text/javascript" src="public/bootstrap.min.js">
         </script>
-        </body>
+    </body>
 
 </html>

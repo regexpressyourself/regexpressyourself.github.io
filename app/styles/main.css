@@ -42,6 +42,32 @@ footer {
     color: #F9F5EC;
 }
 
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3ebda;
+    text-align: center;
+    height: 100vh;
+    background-color: #703030;
+    background-size: cover;
+}
+
+#header-icon {
+    font-size: 500%;
+    margin-top: -5vh;
+}
+.scrolling-chevron {
+    margin-bottom: -60vh;
+    margin-top: 60vh;
+    -webkit-transition: all .2s; /* Safari */
+    transition: all .2s;
+    transition-timing-function: ease-in-out;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
 .clickable {
     position: relative;
     color: #703030;
@@ -136,16 +162,6 @@ a.clickable:visited {
     margin: 0 auto;
 }
 
-.scrolling-chevron {
-    margin-bottom: -55vh;
-    margin-top: 55vh;
-    -webkit-transition: all .2s; /* Safari */
-    transition: all .2s;
-    transition-timing-function: ease-in-out;
-    -webkit-animation: bounce 3s infinite;
-    -moz-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-}
 @-webkit-keyframes bounce{
     0%,100%,20%,50%,80%{
         -webkit-transform:translateY(0);

@@ -8,7 +8,6 @@ class ProjectDescription extends React.Component {
         super(props);
     }
     render() {
-        console.log(this.props);
         return (
             <div className="col-sm-6 hidden-xs" style={ProjectRowItem}>
                 <h3>{this.props.title}</h3>

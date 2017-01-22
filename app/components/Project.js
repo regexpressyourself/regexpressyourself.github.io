@@ -1,19 +1,29 @@
-import React from 'react';
-import ProjectImage from './ProjectImage';
-import ProjectDescription from './ProjectDescription';
+import React            from 'react';
 import SmallProjectView from './SmallProjectView';
-import {ProjectRowContainer} from '../styles';
+import LargeProjectView from './LargeProjectView';
 
 class Project extends React.Component {
+    /* Creates the full row for a given project*/
+
     constructor(props) {
         super(props);
         this.state = {
-            title: "",
-            imageSrc: ""
+            title:           "",
+            imageSrc:        "",
+            description:     "",
+            backgroundStyle: "",
+            projectLink:     "",
+            githubLink:      "",
+            techList:        ""
         }
         this.createComponents = this.createComponents.bind(this);
     }
     componentDidMount() {
+        /* Get properties off the projectObject passed in from
+         * ProjectSection, then create the large screen and
+         * small screen components for the project
+         */
+
         if (this.props.projectObject) {
             this.setState({
                 title:           this.props.projectObject.title,
@@ -22,44 +32,26 @@ class Project extends React.Component {
                 backgroundStyle: this.props.projectObject.background,
                 projectLink:     this.props.projectObject.projectLink,
                 githubLink:      this.props.projectObject.githubLink,
-                techList:        this.props.projectObject.techList,
-                imageOnRight:    this.props.projectObject.imageOnRight
+                techList:        this.props.projectObject.techList
             }, this.createComponents);
         }
     }
 
     createComponents() {
+        /* Creates large and small screen versions of
+         * the project view
+         */
         this.setState({
-            descriptionComponent: this.createDescription(),
-            imageComponent:       this.createImage(),
+            largeViewComponent:   this.createLargeView(),
             smallViewComponent:   this.createSmallView()
         });
     }
 
-    createDescription() {
-        let techImageList = this.createTechImageList();
-        return (
-            <ProjectDescription title={this.state.title}
-                                description={this.state.description}
-                                techList={techImageList}
-                                githubLink={this.state.githubLink}
-                                projectLink={this.state.projectLink} />
-        )
-    }
-
-    createImage() {
-        let techImageList = this.createTechImageList();
-        return (
-            <ProjectImage
-                imageSrc={this.state.imageSrc}
-                techList={techImageList}
-                githubLink={this.state.githubLink}
-                projectLink={this.state.projectLink}
-                backgroundStyle={this.state.backgroundStyle} />
-        )
-    }
 
     createTechImageList() {
+        /* Creates a list of logos for each piece of
+         * tech passed to the project
+         */
         return this.state.techList.map(function(techItem) {
             let techImageSource = "./public/" + techItem + ".svg";
             return <img alt="Tech logo"
@@ -69,11 +61,15 @@ class Project extends React.Component {
         });
     }
 
-    createSmallView() {
+    createLargeView() {
+        /* Creates a view that shows up on screens wider
+         * than 768 px
+         */
         let techImageList = this.createTechImageList();
         return (
-            <SmallProjectView
+            <LargeProjectView
                 imageSrc={this.state.imageSrc}
+                imageOnRight={this.props.imageOnRight}
                 githubLink={this.state.githubLink}
                 techList={techImageList}
                 projectLink={this.state.projectLink}
@@ -81,27 +77,35 @@ class Project extends React.Component {
                 description={this.state.description}
                 backgroundStyle={this.state.backgroundStyle} />
         )
+
+    }
+
+    createSmallView() {
+        /* Creates a view that shows up on screens smaller
+         * than 768 px
+         */
+        let techImageList = this.createTechImageList();
+        return (
+            <SmallProjectView
+                title={this.state.title}
+                imageSrc={this.state.imageSrc}
+                githubLink={this.state.githubLink}
+                projectLink={this.state.projectLink}
+                backgroundStyle={this.state.backgroundStyle} />
+        )
     }
 
     render() {
-        if (this.props.imageOnRight) {
-            return (
-                <div className="row project-row">
-                    {this.state.descriptionComponent}
-                    {this.state.imageComponent}
-                    {this.state.smallViewComponent}
-                </div>
-            )
-        }
-        else {
-            return (
-                <div className="row project-row">
-                    {this.state.imageComponent}
-                    {this.state.descriptionComponent}
-                    {this.state.smallViewComponent}
-                </div>
-            )
-        }
+        /* Large and small view are both rendered,
+         * but are only shown when specified by using
+         * bootstrap's hidden classes
+         */
+        return (
+            <div>
+                {this.state.largeViewComponent}
+                {this.state.smallViewComponent}
+            </div>
+        )
     }
 }
 

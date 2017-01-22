@@ -1,9 +1,4 @@
 import React       from 'react';
-import { Link } from 'react-router';
-import { HeaderContainerStyle,
-         ChevronStyle,
-         HeaderIcon,
-         HeaderInnerStyle} from '../styles';
 
 class Header extends React.Component {
     constructor(props) {
@@ -31,7 +26,7 @@ class Header extends React.Component {
                 <div className="row">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div style={HeaderInnerStyle}>
-                            <i style={HeaderIcon} className="fa fa-code" />
+                            <i id="header-icon" className="fa fa-code" />
                             <h1>Sam Messina</h1>
                             <p>Student | Developer</p>
                             <br/>

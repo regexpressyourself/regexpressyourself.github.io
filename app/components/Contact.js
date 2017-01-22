@@ -1,32 +1,31 @@
 import React    from 'react';
-import {Center,
-        StaticWidth} from '../styles';
 
-class Contact extends React.Component {
-    render() {
-        return (
-            <section id="contact-section">
-                <div className="row">
-                    <div className="col-xs-12" style={Center}>
-                        <h2 style={Center}>Get in touch.</h2>
-                        <a href="mailto:sam@smessina.com">
-                        <p style={StaticWidth} className="clickable">
+function Contact(props) {
+    /* The contact section, with links to my email
+     * and github
+     */
+    return (
+        <section id="contact-section">
+            <div className="row">
+                <div className="col-xs-12 center">
+                    <h2 className="center">Get in touch.</h2>
+                    <a href="mailto:sam@smessina.com">
+                        <p className="clickable contact-clickable">
                             <i className="fa fa-envelope"></i>
                             sam@smessina.com
                         </p>
-                        </a>
-                        <br/>
-                        <a href="https://www.github.com/regexpressyourself">
-                        <p style={StaticWidth} className="clickable">
+                    </a>
+                    <br/>
+                    <a href="https://www.github.com/regexpressyourself">
+                        <p className="clickable contact-clickable">
                             <i className="fa fa-github"></i>
                             github.com/regexpressyourself
                         </p>
-                        </a>
-                    </div>
+                    </a>
                 </div>
-            </section>
-        )
-    }
+            </div>
+        </section>
+    )
 }
 
 export default Contact;

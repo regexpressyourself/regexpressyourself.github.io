@@ -1,10 +1,10 @@
 import React    from 'react';
-import {Center} from '../styles';
 
 class Footer extends React.Component {
+    /* Footer section, with auto-updating year*/
     render() {
         return (
-            <footer style={Center}>
+            <footer className="center">
                 <div className="footer-below">
                     <div className="row">
                         <div className="col-lg-12">

@@ -1,3 +1,6 @@
+/*******************************
+ Globals & Bootstrap Overrides
+*******************************/
 body {
     font-size: 200%;
     color: #2F343B;
@@ -35,6 +38,20 @@ footer {
     color: #F9F5EC;
 }
 
+.img-responsive {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+}
+
+.fa {
+    font-size: 140%;
+    padding: 0 10px;
+}
+
+/*******************************
+Ids
+*******************************/
 #header {
     display: flex;
     align-items: center;
@@ -73,25 +90,9 @@ footer {
     color: #F9F5EC;
 }
 
-.spacer{
-    flex-grow: 1;
-}
-
-.scrolling-chevron {
-    position: absolute;
-    position:absolute;
-    width:300px;
-    margin-left:-150px;
-    left:50%;
-    bottom: 5vh;
-    -webkit-transition: all .2s; /* Safari */
-    transition: all .2s;
-    transition-timing-function: ease-in-out;
-    -webkit-animation: bounce 3s infinite;
-    -moz-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
-}
-
+/*******************************
+Links
+*******************************/
 .clickable {
     position: relative;
     color: #703030;
@@ -135,6 +136,23 @@ a.clickable:visited {
     text-decoration: none;
 }
 
+.contact-clickable {
+    display: inline-block;
+    text-align: left;
+}
+
+/*******************************
+Project section stuff
+*******************************/
+.project-row {
+    margin: 120px 0;
+}
+
+.project-col {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 .project-image-background {
     height: 100%;
@@ -155,22 +173,6 @@ a.clickable:visited {
     margin: 0 20px 0 0;
     font-size: 110%;
 }
-.project-link.right {
-    float: left;
-}
-.project-link.left {
-    float: right;
-}
-
-.project-link > .fa-github {
-}
-
-.project-link > .fa-link{
-}
-
-.fa {
-    font-size: 140%;
-}
 
 .project-link-wrapper {
     margin: 32px 0 16px 0 ;
@@ -182,12 +184,90 @@ a.clickable:visited {
     margin: 16px 12px 5px 12px;
 }
 
-.img-responsive {
-    max-width: 90%;
-    max-height: 90%;
-    margin: 0 auto;
+/*******************************
+Miscellaneous
+*******************************/
+.center {
+    text-align: center
 }
 
+.spacer{
+    flex-grow: 1;
+}
+
+.scrolling-chevron {
+    position: absolute;
+    position:absolute;
+    width:300px;
+    margin-left:-150px;
+    left:50%;
+    bottom: 5vh;
+    -webkit-transition: all .2s; /* Safari */
+    transition: all .2s;
+    transition-timing-function: ease-in-out;
+    -webkit-animation: bounce 3s infinite;
+    -moz-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+.scrolling-chevron:hover,
+.scrolling-chevron:active {
+    cursor: pointer;
+    font-size: 120%;
+}
+
+/*******************************
+Bootstrap's xs size (phone size) rules
+*******************************/
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 175%;
+    }
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 52px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    .project-row {
+        margin: 42px 0px;
+    }
+    .project-link {
+        font-size: 120%;
+        display: block;
+    }
+    .project-link.right {
+        text-align: center;
+    }
+    .project-link.left,
+    .project-link.right {
+        float: none;
+    }
+    .tech-logo-image {
+        max-height: 32px;
+        max-width: 32px;
+        margin: 12px 8px ;
+    }
+    #contact-section {
+        min-height: 75vh;
+    }
+}
+
+/*******************************
+Make projects not blow up on huge screens
+*******************************/
+@media only screen and (min-width: 1200px) {
+    .project-image-background {
+        max-width: 700px;
+    }
+}
+
+/*******************************
+Bouncing chevron
+*******************************/
 @-webkit-keyframes bounce{
     0%,100%,20%,50%,80%{
         -webkit-transform:translateY(0);
@@ -219,60 +299,3 @@ a.clickable:visited {
         transform:translateY(-7px)
     }
 }
-.scrolling-chevron:hover,
-.scrolling-chevron:active {
-    cursor: pointer;
-    font-size: 120%;
-}
-
-.fa {
-    padding: 0 10px;
-}
-
-.project-row {
-    margin: 120px 0;
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 175%;
-    }
-    h1 {
-        font-size: 72px;
-    }
-    h2 {
-        font-size: 52px;
-    }
-    h3 {
-        font-size: 40px;
-    }
-    .project-row {
-        margin: 42px 0px;
-    }
-    .project-link {
-        font-size: 120%;
-    }
-    .project-link.right {
-        text-align: center;
-    }
-    .project-link.left,
-    .project-link.right {
-        float: none;
-    }
-    .tech-logo-image {
-        max-height: 32px;
-        max-width: 32px;
-        margin: 12px 8px ;
-    }
-    #contact-section {
-        min-height: 75vh;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .project-image-background {
-        max-width: 700px;
-    }
-}
-
-

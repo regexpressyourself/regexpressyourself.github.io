@@ -1,35 +1,25 @@
 import React from 'react';
-import {ProjectRowItem} from '../styles';
 
-class ProjectImage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            imageLink: this.getImageLink()
-        };
-    }
+function ProjectImage(props) {
+    /* Shows the image for a project on wider screens*/
 
-    getImageLink() {
-        return this.props.projectLink ? this.props.projectLink : this.props.githubLink;
-    }
+    return (
+        <span>
+            <div style={props.backgroundStyle}
+                 className="project-image-background">
 
-    render() {
-        return (
-            <div className="col-sm-6 hidden-xs" style={ProjectRowItem}>
-                <div style={this.props.backgroundStyle}
-                     className="project-image-background">
-                    <a href={this.state.imageLink}>
+                {/* Picture links to project if possible, github if not */}
+                <a href={props.projectLink || props.githubLink}>
                     <img className="img-responsive"
                          alt="Project Logo"
-                         src={this.props.imageSrc} />
-                    </a>
-                </div>
-                <span className="hidden-md hidden-lg" >
-                    {this.props.techList}
-                </span>
+                         src={props.imageSrc} />
+                </a>
             </div>
-        )
-    }
+            <span className="hidden-md hidden-lg" >
+                {props.techList}
+            </span>
+        </span>
+    )
 }
 
 export default ProjectImage;

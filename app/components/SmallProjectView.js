@@ -1,31 +1,31 @@
 import React from 'react';
 import ProjectLinks from './ProjectLinks';
-import {SmallProjectRowItem} from '../styles';
 
-class SmallProjectView extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
+function SmallProjectView (props) {
+    /* Show the project view for screens smaller than 768 px*/
 
-            <div className="col-xs-12 hidden-sm hidden-md hidden-lg" style={SmallProjectRowItem}>
-                <h3>{this.props.title}</h3>
+    return (
+        <div className="col-xs-12 hidden-sm hidden-md hidden-lg">
+            <h3>{props.title}</h3>
 
-                <a href={this.props.projectLink || this.props.githubLink}>
-                    <div style={this.props.backgroundStyle}
-                         className="project-image-background">
-                        <img className="img-responsive"
-                             alt="Project Logo"
-                             src={this.props.imageSrc} />
-                    </div>
-                </a>
-                <ProjectLinks
-                    githubLink={this.props.githubLink}
-                    projectLink={this.props.projectLink} />
-            </div>
-        )
-    }
+            {/* Picture links to project if possible, github if not */}
+            <a href={props.projectLink || props.githubLink}>
+
+                {/* Give the background of the picture the proper style */}
+                <div style={props.backgroundStyle}
+                     className="project-image-background">
+                    <img className="img-responsive"
+                         alt="Project Logo"
+                         src={props.imageSrc} />
+                </div>
+            </a>
+
+            {/* Add project links underneath */}
+            <ProjectLinks
+                githubLink={props.githubLink}
+                projectLink={props.projectLink} />
+        </div>
+    )
 }
 
 export default SmallProjectView;

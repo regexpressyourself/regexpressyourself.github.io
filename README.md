@@ -1,3 +1,5 @@
 #Portfolio Site
 
-A small site to showcase projects, as well as increase web development experience
+My Portfolio showing all my completed projects.
+
+Hosting through Github Pages. Front end is running largely on React.js. All design is my own.

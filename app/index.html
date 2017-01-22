@@ -13,6 +13,8 @@
 
         <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
 
+
+        <!-- Javascript and CSS for above-the-fold content -->
         <script>
          function scrollToProjects() {
              $(document).ready(function () {
@@ -22,6 +24,25 @@
              });
          }
         </script>
+
+        <style>
+         #header {
+             display: flex;
+             align-items: center;
+             flex-flow: column;
+             justify-content: center;
+             color: #f3ebda;
+             text-align: center;
+             height: 100vh;
+             background-color: #703030;
+             background-size: cover;
+         }
+
+         #header-icon {
+             font-size: 600%;
+             margin-top: -5vh;
+         }
+        </style>
 
     </head>
 

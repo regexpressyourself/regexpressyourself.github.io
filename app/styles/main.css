@@ -130,6 +130,7 @@ Links
 a.clickable {
     text-decoration: none;
 }
+
 a.clickable:hover,
 a.clickable:active,
 a.clickable:visited {

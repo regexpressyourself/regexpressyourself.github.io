@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Generic meta stuff -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Portfolio for Sam Messina">
+        <meta name="author" content="Sam Messina">
 
         <title>Sam Messina</title>
 
@@ -14,9 +15,10 @@
         <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
 
 
-        <!-- Javascript and CSS for above-the-fold content -->
+        <!-- Javascript for above-the-fold content -->
         <script>
          function scrollToProjects() {
+             /* Scrolls to the projects section when chevron is clicked*/
              $(document).ready(function () {
                  $("html, body").animate({
                      scrollTop: $("#project-section").offset().top
@@ -25,8 +27,10 @@
          }
         </script>
 
+        <!-- CSS for above-the-fold content -->
         <style>
          #header {
+             /* Center title and logo */
              display: flex;
              align-items: center;
              flex-flow: column;
@@ -37,33 +41,35 @@
              background-color: #703030;
              background-size: cover;
          }
-
          #header-icon {
+             /* Put chevron on bottom */
              font-size: 600%;
              margin-top: -5vh;
          }
         </style>
-
     </head>
 
     <body>
+        <!-- Header rendered immediately, regardless of bootstrap, react, etc -->
         <header id="header">
             <div >
                 <i id="header-icon" class="fa fa-code"></i>
                 <h1>Sam Messina</h1>
                 <p>Student | Developer</p>
-                <br/>
             </div>
             <div onClick=scrollToProjects() class="scrolling-chevron">
                 <i class="fa fa-chevron-down"> </i>
             </div>
         </header>
+
+        <!-- React root -->
         <div id="app"></div>
+
         <!-- Custom Fonts -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
+        <!-- A little jquery for smooth scrolling -->
         <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
     <script type="text/javascript" src="index_bundle.js"></script></body>
 </html>

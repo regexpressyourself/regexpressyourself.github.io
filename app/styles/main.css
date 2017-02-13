@@ -2,7 +2,8 @@
  Globals & Bootstrap Overrides
 *******************************/
 body {
-    font-size: 200%;
+    font-family: "Source Sans Pro";
+    font-size: 250%;
     color: #2F343B;
 }
 
@@ -21,8 +22,10 @@ h2:after {
     display: block;
     position: absolute;
     content:"____";
-    width: 100%; top: 30px;
+    width: 100%; 
+    top: 30px;
     text-align: center;
+    letter-spacing: -3px;
     left: 0;
 }
 
@@ -220,18 +223,24 @@ Miscellaneous
 /*******************************
 Bootstrap's xs size (phone size) rules
 *******************************/
+@media only screen and (max-width: 337px) {
+  h2:after {
+    top: 100px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
     body {
-        font-size: 175%;
+        font-size: 180%;
     }
     h1 {
         font-size: 72px;
     }
     h2 {
-        font-size: 52px;
+        font-size: 60px;
     }
     h3 {
-        font-size: 40px;
+        font-size: 44px;
     }
     .project-row {
         margin: 42px 0px;
@@ -265,6 +274,7 @@ Make projects not blow up on huge screens
         max-width: 700px;
     }
 }
+
 
 /*******************************
 Bouncing chevron

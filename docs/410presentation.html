@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/css/theme/blood.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+    <h2>Passman Presentation Outline</h2>
+</section>
+<section>
+<section id="slide-org5e6a6ab">
+<h2 id="org5e6a6ab"><span class="section-number-2">1</span> Setup</h2>
+<ol>
+<li>Using a live version of a VM</li>
+<li>will set up everything from scratch in real time</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org2dccae9">
+<h2 id="org2dccae9"><span class="section-number-2">2</span> Introduction</h2>
+<ol>
+<li>Show Github Project</li>
+<li>Explain password managers</li>
+<li>Explain pip install process</li>
+<li>pip install passman</li>
+<li>while installing, talk about command line vs menu usage</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbf8c484">
+<h2 id="orgbf8c484"><span class="section-number-2">3</span> Menu Demo</h2>
+<ol>
+<li>run passman
+<ul>
+<li>create account</li>
+<li>add service</li>
+<li>get password</li>
+
+</ul></li>
+<li>explain password generation</li>
+<li>show the 20 second cooldown</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orgef532ad">
+<h2 id="orgef532ad"><span class="section-number-2">4</span> Command line demo</h2>
+<ol>
+<li>get new service's password via command line</li>
+<li>explain usage options
+<ul>
+<li>set up an alias for retrieving password for new service</li>
+<li>run the alias, showing how it can work</li>
+
+</ul></li>
+<li>show 20 second cooldown</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org9357e57">
+<h2 id="org9357e57"><span class="section-number-2">5</span> Offline</h2>
+<ol>
+<li>explain how database stores everything</li>
+<li>explain potential needs for offline storage (server down, no internet, etc)</li>
+<li>turn off internet and run passman
+<ul>
+<li>also run alias</li>
+
+</ul></li>
+<li>pull up local file and show them contents</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org532ad0e">
+<h2 id="org532ad0e"><span class="section-number-2">6</span> Security</h2>
+<ol>
+<li>explain the two password hashes - one for key and one for storage</li>
+<li>explain the encryption process for services</li>
+<li>mention all encryption is local, only sending hashed/encrypted data over the network</li>
+
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-org532a0e">
+<h2 id="org532a0e"><span class="section-number-2">7</span> Questions</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="./reveal.js/lib/js/head.min.js"></script>
+<script src="./reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

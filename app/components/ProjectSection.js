@@ -80,6 +80,15 @@ const projectList = [
      */
 
     {
+        title:       "Passman",
+        description: "Terminal-based password manager",
+        imageSrc:    "http://smessina.com/public/passmanlogo.png",
+        projectLink: "https://pypi.python.org/pypi/passman",
+        githubLink:  "https://www.github.com/regexpressyourself/passman",
+        techList:    ["python", "mongodb"],
+        background:  {backgroundColor: '#70C1B3'}
+    },
+    {
         title:       "Git Flow",
         description: "Stateful flow chart that walks users through proper usage of git.",
         imageSrc:    "http://smessina.com/public/GitFlowLogo.png",

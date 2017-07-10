@@ -55,22 +55,6 @@ footer {
 /*******************************
 Ids
 *******************************/
-#header {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    justify-content: center;
-    color: #f3ebda;
-    text-align: center;
-    height: 100vh;
-    background-color: #703030;
-    background-size: cover;
-}
-
-#header-icon {
-    font-size: 600%;
-    margin-top: -5vh;
-}
 
 #project-section {
     background-color: #F9F5EC;

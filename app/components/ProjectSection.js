@@ -82,7 +82,7 @@ const projectList = [
     {
         title:       "Passman",
         description: "Terminal-based password manager",
-        imageSrc:    "http://smessina.com/public/passmanlogo.png",
+        imageSrc:    "/public/passmanlogo.png",
         projectLink: "https://pypi.python.org/pypi/passman",
         githubLink:  "https://www.github.com/regexpressyourself/passman",
         techList:    ["python", "mongodb"],
@@ -91,8 +91,8 @@ const projectList = [
     {
         title:       "Git Flow",
         description: "Stateful flow chart that walks users through proper usage of git.",
-        imageSrc:    "http://smessina.com/public/GitFlowLogo.png",
-        projectLink: "http://smessina.com/gitflow",
+        imageSrc:    "/public/GitFlowLogo.png",
+        projectLink: "/gitflow",
         githubLink:  "https://www.github.com/regexpressyourself/gitflow",
         techList:    ["react", "js", "html", "css", "bootstrap"],
         background:  {backgroundColor: '#f9f2f4'}
@@ -101,7 +101,7 @@ const projectList = [
         title:       "OrderUp HookUp",
         description: "Mobile-first web app that provides an easy," +
                      " intuitive way to find restaurants around you.",
-        imageSrc:    "http://smessina.com/public/ohlogo.png",
+        imageSrc:    "/public/ohlogo.png",
         projectLink: "http://orderuphookup.com",
         githubLink:  "https://www.github.com/regexpressyourself/OrderUp-HookUp",
         techList:    ["js", "node", "angular", "html", "css", "bootstrap"],
@@ -111,7 +111,7 @@ const projectList = [
         title:       "Woody At Random",
         description: "Interactive Woody Allen film database, capabale of " +
                      "recommending films at random or with interactive search",
-        imageSrc:    "http://smessina.com/public/woody.png",
+        imageSrc:    "/public/woody.png",
         techList:    ["php", "html", "css", "js", "mysql", "apache", "bootstrap"],
         background:  {backgroundColor: '#000000'},
         projectLink: "http://www.woodyatrandom.com",
@@ -120,8 +120,8 @@ const projectList = [
     {
         title:       "Q Programming Language",
         description: "A Programming language developed to allow simple queue manipulation",
-        imageSrc:    "http://smessina.com/public/qlanguage.png",
-        projectLink: "http://smessina.com/Q-Programming-Language",
+        imageSrc:    "/public/qlanguage.png",
+        projectLink: "/Q-Programming-Language",
         githubLink:  "https://www.github.com/regexpressyourself/Q-Programming-Language",
         background:  {backgroundColor: '#FFF176'},
         techList:    ["java"]
@@ -129,7 +129,7 @@ const projectList = [
     {
         title:       "Scheduler.py",
         description: "Command-line program that automates retail employee scheduling",
-        imageSrc:    "http://smessina.com/public/scheduler.png",
+        imageSrc:    "/public/scheduler.png",
         projectLink: "",
         githubLink:  "https://www.github.com/regexpressyourself/Scheduler.py",
         background:  {backgroundColor: '#282A36'},
@@ -138,11 +138,11 @@ const projectList = [
     {
         title:       "Turbo Pup Band Site",
         description: "Website for the band Turbo Pup",
-        imageSrc:    "http://smessina.com/public/turbo.png",
-        projectLink: "http://smessina.com/Turbo-Pup-Site",
+        imageSrc:    "/public/turbo.png",
+        projectLink: "/Turbo-Pup-Site",
         githubLink:  "https://www.github.com/regexpressyourself/Turbo-Pup-Site",
         techList:    ["html", "css", "js", "bootstrap"],
-        background:  {backgroundImage: 'url("http://smessina.com/public/turbo-bg.png")'}
+        background:  {backgroundImage: 'url("/public/turbo-bg.png")'}
     }
 
 ];

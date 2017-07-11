@@ -10,9 +10,7 @@
 
         <title>Sam Messina | Web Developer | SEO Professional</title>
 
-        <link rel="stylesheet" href="public/bootstrap.min.css" >
-
-        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+        <link rel="canonical" href="https://smessina.com">
 
         <!-- CSS for above-the-fold content -->
         <style>
@@ -35,17 +33,9 @@
          }
         </style>
 
-        <!-- Javascript for above-the-fold content -->
-        <script>
-         function scrollToProjects() {
-             /* Scrolls to the projects section when chevron is clicked*/
-             $(document).ready(function () {
-                 $("html, body").animate({
-                     scrollTop: $("#project-section").offset().top
-                 }, 500);
-             });
-         }
-        </script>
+        <!-- Custom Fonts -->
+        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -64,9 +54,19 @@
         <!-- React root -->
         <div id="app"></div>
 
-        <!-- Custom Fonts -->
+        <!-- Javascript for above-the-fold content -->
+        <link rel="stylesheet" href="public/bootstrap.min.css" >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+        <script>
+         function scrollToProjects() {
+             /* Scrolls to the projects section when chevron is clicked*/
+             $(document).ready(function () {
+                 $("html, body").animate({
+                     scrollTop: $("#project-section").offset().top
+                 }, 500);
+             });
+         }
+        </script>
 
         <!-- A little jquery for smooth scrolling -->
         <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>

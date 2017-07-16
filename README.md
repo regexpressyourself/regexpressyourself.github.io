@@ -1,5 +1,5 @@
-#Portfolio Site
+# Sam Messina Portfolio
 
 My Portfolio showing all my completed projects.
 
-Hosting through Github Pages. Front end is running largely on React.js. All design is my own.
+React.js powers the below-the-fold content. All design is my own.

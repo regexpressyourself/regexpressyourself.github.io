@@ -1,4 +1,4 @@
-<img alt="Sam Messina Logo" align="right" src="https://regexpressyourself.github.io/public/ohlogo.png" width="400px"/>
+<img alt="Sam Messina Logo" align="right" src="./public/sjmlogo.png" width="400px"/>
 
 # Sam Messina's Portfolio
 

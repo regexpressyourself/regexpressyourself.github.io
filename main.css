@@ -1,0 +1,39 @@
+* {
+  font-family: 'Khula', sans-serif;
+  font-size: 120%;
+  text-align: center;
+}
+h1 {
+  font-weight: 800;
+  font-size: 300%;
+  margin: 0;
+}
+
+div#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.img-container {
+  margin: 5px;
+}
+.img-container p {
+  font-size: 50%;
+  text-align: center;
+  margin: 0;
+}
+img {
+  max-width: 25vw;
+}
+@media screen and (max-width: 750px) {
+  img {
+    max-width: 40vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  img {
+    max-width: 80vw;
+  }
+}

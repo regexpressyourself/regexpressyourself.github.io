@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Generic meta stuff -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Sam Messina is a web developer, SEO professional, and javascript fanboy">
-        <meta name="author" content="Sam Messina">
+  <head>
+    <!-- Generic meta stuff -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sam Messina is a web developer, SEO professional, and javascript fanboy">
+    <meta name="author" content="Sam Messina">
 
-        <title>Sam Messina | Web Developer | SEO Professional</title>
+    <title>Sam Messina | Web Developer | SEO Professional</title>
 
-        <link rel="canonical" href="https://smessina.com">
-        <link rel="stylesheet" href="public/bootstrap.min.css" >
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+    <link rel="canonical" href="https://smessina.com">
+    <link rel="stylesheet" href="main.css" >
 
-        <!-- CSS for above-the-fold content -->
-        <style>
-         #header {
-             /* Center title and logo */
-             display: flex;
-             align-items: center;
-             flex-flow: column;
-             justify-content: center;
-             color: #f3ebda;
-             text-align: center;
-             height: 100vh;
-             background-color: #703030;
-             background-size: cover;
-         }
-         #header-icon {
-             /* Put chevron on bottom */
-             font-size: 600%;
-             margin-top: -5vh;
-         }
-        </style>
 
-        <!-- Custom Fonts -->
-        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+  </head>
 
     <body>
-        <!-- Header rendered immediately, regardless of bootstrap, react, etc -->
-        <header id="header">
-            <div >
-                <i id="header-icon" class="fa fa-code"></i>
-                <h1>Sam Messina</h1>
-                <p>Web Developer</p>
-            </div>
-            <div onClick=scrollToProjects() class="scrolling-chevron">
-                <i class="fa fa-chevron-down"> </i>
-            </div>
-        </header>
-
-        <!-- React root -->
-        <div id="app"><div data-reactroot=""><section id="project-section"><div class="container"><div class="row"><div class="col-xs-12 center"><h2>Projects</h2><div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><div><h3>Passman</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/python.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/mongodb.svg" class="tech-logo-image"></span><p>Terminal-based password manager</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/passman" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 146 --> Github<!-- /react-text --></a><a href="https://pypi.python.org/pypi/passman" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 149 --> Link<!-- /react-text --></a></div></div></div><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-color: rgb(112, 193, 179);"><a href="https://pypi.python.org/pypi/passman"><img class="img-responsive" alt="Project Logo" src="/public/passmanlogo.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/python.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/mongodb.svg" class="tech-logo-image"></span></span></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>Passman</h3><a href="https://pypi.python.org/pypi/passman"><div class="project-image-background" style="background-color: rgb(112, 193, 179);"><img class="img-responsive" alt="Project Logo" src="/public/passmanlogo.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/passman" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 45 --> Github<!-- /react-text --></a><a href="https://pypi.python.org/pypi/passman" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 48 --> Link<!-- /react-text --></a></div></div></div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-color: rgb(249, 242, 244);"><a href="/gitflow"><img class="img-responsive" alt="Project Logo" src="/public/GitFlowLogo.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/react.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span></span></div><div class="col-sm-6 hidden-xs project-col"><div><h3>Git Flow</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/react.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span><p>Stateful flow chart that walks users through proper usage of git.</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/gitflow" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 179 --> Github<!-- /react-text --></a><a href="/gitflow" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 182 --> Link<!-- /react-text --></a></div></div></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>Git Flow</h3><a href="/gitflow"><div class="project-image-background" style="background-color: rgb(249, 242, 244);"><img class="img-responsive" alt="Project Logo" src="/public/GitFlowLogo.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/gitflow" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 60 --> Github<!-- /react-text --></a><a href="/gitflow" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 63 --> Link<!-- /react-text --></a></div></div></div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><div><h3>OrderUp HookUp</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/node.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/angular.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span><p>Mobile-first web app that provides an easy, intuitive way to find restaurants around you.</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/OrderUp-HookUp" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 196 --> Github<!-- /react-text --></a><a href="http://orderuphookup.com" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 199 --> Link<!-- /react-text --></a></div></div></div><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-color: rgb(230, 250, 237);"><a href="http://orderuphookup.com"><img class="img-responsive" alt="Project Logo" src="/public/ohlogo.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/node.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/angular.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span></span></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>OrderUp HookUp</h3><a href="http://orderuphookup.com"><div class="project-image-background" style="background-color: rgb(230, 250, 237);"><img class="img-responsive" alt="Project Logo" src="/public/ohlogo.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/OrderUp-HookUp" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 75 --> Github<!-- /react-text --></a><a href="http://orderuphookup.com" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 78 --> Link<!-- /react-text --></a></div></div></div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-color: rgb(0, 0, 0);"><a href="http://www.woodyatrandom.com"><img class="img-responsive" alt="Project Logo" src="/public/woody.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/php.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/mysql.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/apache.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span></span></div><div class="col-sm-6 hidden-xs project-col"><div><h3>Woody At Random</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/php.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/mysql.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/apache.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span><p>Interactive Woody Allen film database, capabale of recommending films at random or with interactive search</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Woody-At-Random" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 237 --> Github<!-- /react-text --></a><a href="http://www.woodyatrandom.com" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 240 --> Link<!-- /react-text --></a></div></div></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>Woody At Random</h3><a href="http://www.woodyatrandom.com"><div class="project-image-background" style="background-color: rgb(0, 0, 0);"><img class="img-responsive" alt="Project Logo" src="/public/woody.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Woody-At-Random" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 90 --> Github<!-- /react-text --></a><a href="http://www.woodyatrandom.com" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 93 --> Link<!-- /react-text --></a></div></div></div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><div><h3>Q Programming Language</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/java.svg" class="tech-logo-image"></span><p>A Programming language developed to allow simple queue manipulation</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Q-Programming-Language" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 249 --> Github<!-- /react-text --></a><a href="/Q-Programming-Language" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 252 --> Link<!-- /react-text --></a></div></div></div><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-color: rgb(255, 241, 118);"><a href="/Q-Programming-Language"><img class="img-responsive" alt="Project Logo" src="/public/qlanguage.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/java.svg" class="tech-logo-image"></span></span></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>Q Programming Language</h3><a href="/Q-Programming-Language"><div class="project-image-background" style="background-color: rgb(255, 241, 118);"><img class="img-responsive" alt="Project Logo" src="/public/qlanguage.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Q-Programming-Language" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 105 --> Github<!-- /react-text --></a><a href="/Q-Programming-Language" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 108 --> Link<!-- /react-text --></a></div></div></div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-color: rgb(40, 42, 54);"><a href="https://www.github.com/regexpressyourself/Scheduler.py"><img class="img-responsive" alt="Project Logo" src="/public/scheduler.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/python.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/excel.svg" class="tech-logo-image"></span></span></div><div class="col-sm-6 hidden-xs project-col"><div><h3>Scheduler.py</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/python.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/excel.svg" class="tech-logo-image"></span><p>Command-line program that automates retail employee scheduling</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Scheduler.py" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 275 --> Github<!-- /react-text --></a><!-- react-text: 276 --><!-- /react-text --></div></div></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>Scheduler.py</h3><a href="https://www.github.com/regexpressyourself/Scheduler.py"><div class="project-image-background" style="background-color: rgb(40, 42, 54);"><img class="img-responsive" alt="Project Logo" src="/public/scheduler.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Scheduler.py" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 120 --> Github<!-- /react-text --></a><!-- react-text: 121 --><!-- /react-text --></div></div></div><div><div class="row project-row"><div class="col-sm-6 hidden-xs project-col"><div><h3>Turbo Pup Band Site</h3><span class="hidden-xs hidden-sm"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span><p>Website for the band Turbo Pup</p><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Turbo-Pup-Site" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 288 --> Github<!-- /react-text --></a><a href="/Turbo-Pup-Site" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 291 --> Link<!-- /react-text --></a></div></div></div><div class="col-sm-6 hidden-xs project-col"><span><div class="project-image-background" style="background-image: url(&quot;/public/turbo-bg.png&quot;);"><a href="/Turbo-Pup-Site"><img class="img-responsive" alt="Project Logo" src="/public/turbo.png"></a></div><span class="hidden-md hidden-lg"><img alt="Tech logo" src="./public/html.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/css.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/js.svg" class="tech-logo-image"><img alt="Tech logo" src="./public/bootstrap.svg" class="tech-logo-image"></span></span></div></div><div class="col-xs-12 hidden-sm hidden-md hidden-lg"><h3>Turbo Pup Band Site</h3><a href="/Turbo-Pup-Site"><div class="project-image-background" style="background-image: url(&quot;/public/turbo-bg.png&quot;);"><img class="img-responsive" alt="Project Logo" src="/public/turbo.png"></div></a><div class="project-link-wrapper row"><a href="https://www.github.com/regexpressyourself/Turbo-Pup-Site" class="clickable project-link"><i class="fa fa-github"></i><!-- react-text: 133 --> Github<!-- /react-text --></a><a href="/Turbo-Pup-Site" class="clickable project-link"><i class="fa fa-link"></i><!-- react-text: 136 --> Link<!-- /react-text --></a></div></div></div></div></div></div></div></section><section id="contact-section"><div class="row"><div class="col-xs-12 center"><h2 class="center">Get in touch.</h2><a href="mailto:sam@smessina.com"><p class="clickable contact-clickable"><i class="fa fa-envelope"></i><!-- react-text: 15 -->sam@smessina.com<!-- /react-text --></p></a><br><a href="https://www.github.com/regexpressyourself"><p class="clickable contact-clickable"><i class="fa fa-github"></i><!-- react-text: 20 -->github.com/regexpressyourself<!-- /react-text --></p></a></div></div></section><footer class="center"><div class="footer-below"><div class="row"><div class="col-lg-12"><!-- react-text: 25 -->Copyright © Sam Messina <!-- /react-text --><!-- react-text: 26 -->2017<!-- /react-text --></div></div></div></footer></div>
+      <header id="header">
+        <i id="header-icon" class="fa fa-code"></i>
+        <h1>Sam Messina</h1>
+        <p>Typography Assignment</p>
+      </header>
+      <div id="images">
+        <div class="img-container">
+          <a href="img/final_designs-01.png" target="_blank">
+            <img src="img/final_designs-01.png" alt="">
+          </a>
+          <p>Basic Idea</p>
+        </div>
+        <div class="img-container">
+          <a href="img/final_designs-02.png" target="_blank">
+            <img src="img/final_designs-02.png" alt="">
+          </a>
+          <p>Blue on Blue</p>
+        </div>
+        <div class="img-container">
+          <a href="img/final_designs-03.png" target="_blank">
+            <img src="img/final_designs-03.png" alt="">
+          </a>
+          <p>Yellow on Blue</p>
+        </div>
+        <div class="img-container">
+          <a href="img/final_designs-04.png" target="_blank">
+            <img src="img/final_designs-04.png" alt="">
+          </a>
+          <p>Pink on Blue</p>
+        </div>
+        <div class="img-container">
+          <a href="img/final_designs-05.png" target="_blank">
+            <img src="img/final_designs-05.png" alt="">
+          </a>
+          <p>Orange on Blue</p>
+        </div>
+        <div class="img-container">
+          <a href="img/final_designs-06.png" target="_blank">
+            <img src="img/final_designs-06.png" alt="">
+          </a>
+          <p>A Little Andy Warhol</p>
+        </div>
+        <div class="img-container">
+          <a href="img/final_designs-07.png" target="_blank">
+            <img src="img/final_designs-07.png" alt="">
+          </a>
+          <p>Or Maybe Exit Through The Gift Shop</p>
         </div>
 
-        <!-- Javascript for above-the-fold content -->
-        <script>
-         function scrollToProjects() {
-             /* Scrolls to the projects section when chevron is clicked*/
-             $(document).ready(function () {
-                 $("html, body").animate({
-                     scrollTop: $("#project-section").offset().top
-                 }, 500);
-             });
-         }
-        </script>
+        
+      </div>
 
-        <!-- A little jquery for smooth scrolling -->
-        <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
-    <script type="text/javascript" src="index_bundle.js"></script></body>
+      <script type="text/javascript" src="main.js"></script>
+    </body>
 </html>

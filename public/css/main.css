@@ -298,6 +298,10 @@ footer > p {
   h1{
     font-size: 30vw;
   }
+#logo {
+  font-family: "Londrina", sans-serif;
+  font-size: 30vw;
+}
   h3 {
     font-size: 6vw;
   }
